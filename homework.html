@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Webpage</title>
+    <style>
+        @font-face {
+            font-family: 'FunkyFont';
+            src: url('funky.ttf') format('truetype');
+        }
+        
+        @font-face {
+            font-family: 'ElegantFont';
+            src: url('1.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'ModernFont';
+            src: url('3.ttf') format('woff');
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .ttf-example {
+            font-family: 'FunkyFont', Arial, sans-serif;
+            font-size: 24px;
+            color: purple;
+        }
+        .otf-example {
+            font-family: 'ElegantFont', Arial, sans-serif;
+            font-size: 24px;
+            color: darkblue;
+        }
+        .woff-example {
+            font-family: 'ModernFont', Arial, sans-serif;
+            font-size: 24px;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tavinho's Homework 2</h1>
+    
+    <p>Hello, this is my homework.</p>
+    <p>Here are some multimedia elements:</p>
+    
+    <h2>Photos</h2>
+    <p><strong>JPEG (Lossy Compression):</strong> JPEG is a commonly used format for digital photos. It uses lossy compression to reduce file size while maintaining acceptable image quality.</p>
+    <img src="photo.jpg" alt="JPEG Photo" width="300">
+    
+    <p><strong>PNG (Lossless Compression):</strong> PNG supports transparency and lossless compression, making it ideal for graphics and images requiring high detail.</p>
+    <img src="photo.png" alt="PNG Photo" width="300">
+    
+    <p><strong>HDR (High Dynamic Range):</strong> HDR images contain a greater range of brightness and contrast, preserving details in both dark and bright areas.</p>
+    <img src="818-hdri-skies-com.hdr" alt="HDR Photo" width="300">
+    
+    <h2>Graphics</h2>
+    <p><strong>SVG (Scalable Vector Graphics):</strong> SVG files use vector-based graphics, meaning they can be scaled without losing quality.</p>
+    <img src="graphic.svg" alt="SVG Graphic" width="300">
+    
+    <p><strong>GIF (Animated):</strong> GIFs support simple animations and transparency but are limited in color depth.</p>
+    <img src="GIF.gif" alt="GIF Animation" width="300">
+    
+    <h2>Font Examples</h2>
+    <p class="ttf-example">This text is using a TTF (TrueType Font) with a funky style!</p>
+    <p class="otf-example">This text is using an OTF (OpenType Font) with an elegant design!</p>
+    <p class="woff-example">This text is using a WOFF (Web Open Font Format) with a modern look!</p>
+    
+    <h2>Sound</h2>
+    <audio controls>
+        <source src="sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <h2>Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/45A_9y1ClAQ" frameborder="0" allowfullscreen></iframe>
+    
+    <script>
+        // WebGL HDR Rendering Placeholder
+        const canvas = document.getElementById('hdrCanvas');
+        const ctx = canvas.getContext('2d');
+        ctx.fillStyle = 'gray';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        ctx.fillStyle = 'white';
+        ctx.font = '16px Arial';
+        ctx.fillText('HDR Image Placeholder', 50, 100);
+    </script>
+</body>
+</html>
